@@ -1,0 +1,1 @@
+export default () => <img src="/static/timg.gif" alt="pikaqiu" />

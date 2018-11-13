@@ -1,0 +1,76 @@
+:root:before{content: "author:lijanchan;design:lanbo;time:20180417";display: none;}
+body,button,input,select,textarea{font: 12px/1.5 Arial, PingfangSC, "Microsoft YaHei", sans-serif;-webkit-font-smoothing:antialiased}
+ul,ol{list-style:none;}em,i{font-style:normal;}
+body{margin:0;overflow-x:hidden;overflow-y: auto;position: relative;}
+header,ol,ul,input{margin:0; padding:0;}
+dl,dd,h1,h2,h3,h4,h5,h6,p,form{margin:0;font-weight: normal;}
+img{border: 0;}
+table{ width:auto;border-collapse: collapse;border-spacing: 0;}
+a{text-decoration:none;outline:none;color:#333;}
+a,button,button:active,input{-webkit-tap-highlight-color: transparent;}
+input,textarea{background: transparent;outline: none;box-shadow: none;border-radius: 0;border:0;-webkit-appearance: none;}
+mark{background-color:transparent;color:inherit;}
+strong,em,i{font-style: normal;}
+.hide_txt{text-indent: -9999em;font-size: 0;line-height: 0;}
+
+/*layout*/
+html{font-size: 9.25926vw;}
+html, body {width:100%; height: 100%;}
+
+.pop_wp{position: absolute;top: 0;left: 0;z-index: 99;width: 100%;height: 100%;}
+.pop_area{position: absolute;top: 0;left: 0;width: 100%;height: 100%;display: -webkit-box;-webkit-box-pack:center;}
+.pop_close{position: absolute;width: .84rem;height: .84rem;top: 0;right: 0;background: url('../img/ic_close.png') no-repeat;background-size: 100% 100%;}
+.mpop_box{position: relative;background: #fff;overflow: hidden;width: 100%;display: block;}
+.mpop_cont{padding: .76rem .88rem .52rem;}
+
+.mpop_box .pop_tt{font-size: .57rem;color: #333;text-align: center;}
+.mpop_box .txt_pop{font-size: .42rem;line-height: .6rem;color: #666;margin-top: .5rem;}
+
+.mpop_box .input_wp{margin: .6rem 0 0;}
+
+.mpop_box .ipt_box{border-bottom: 1px solid #e4e4e4;position: relative;height: 1.2rem;text-align: right;font-size: 0;line-height: 0;margin-bottom: .3rem;}
+.mpop_box .ipt_box label{position: absolute;top: 0;left: 0;font-size: .42rem;color: #333;line-height: 1.2rem;text-align: left;}
+.mpop_box .ipt_box input{display: inline-block;width: 5.52rem;text-align: left;height: 1.2rem;font-size: .42rem;line-height: 1.2rem;color: #333;}
+.mpop_box .input_wp .txt_error{position: absolute;top: 100%;margin-top: 1px;left: 0;height: .76rem;text-align: left;padding-left: .52rem;font-size: .32rem;color: #fe3824;line-height: .76rem;}
+.mpop_box .input_wp .txt_error:before{content: "";position: absolute;top: 50%;left: 0;width: .32rem;height: .32rem;margin-top: -.16rem;background: url('../img/ic_error.png') no-repeat center center;background-size: contain;}
+
+.mpop_box .pop_btn{margin-top: 1.2rem;}
+.mpop_box .btn_blue{display: block;font-size: .48rem;text-align: center;line-height: 1.2rem;border-radius: .08rem;color: #fff;background: #1aa3ff;}
+.mpop_box .btn_blue.grey{background: #87c9fa;}
+.mpop_box .txt_link{text-align: center;font-size: .48rem;color: #5a6473;margin-top: .48rem;}
+.mpop_box .txt_link a{color: #5a6473;}
+
+.mpop_box .pop_tip{text-align: center;font-size: .32rem;color: #999;margin-top: .7rem;}
+
+.mpop_box .phone_wp{margin-top: .28rem;}
+.mpop_box .txt_ph{position: relative;padding-left: .34rem;font-size: .32rem;line-height: .36rem;color: #999;}
+.mpop_box .txt_ph:before{content: "";position: absolute;top: 0;left: 0;width: .32rem;height: .36rem;background: url('../img/ic_safe.png');background-size: 100% 100%;}
+.mpop_box .txt_phone{display: -webkit-box;-webkit-box-align: center;-webkit-box-pack: center;margin-top: 1.16rem;}
+.mpop_box .txt_phone:before{content: "";display: block;width: .64rem;height: .64rem;background: url('../img/ic_phone.png');background-size: 100% 100%;margin-right: .4rem;}
+.mpop_box .txt_phone span{display: block;font-size: .48rem;line-height: .64rem;color: #333;}
+
+.mpop_box .ipt_box2{position: relative;height: 1.2rem;margin-bottom: .3rem;border-bottom: 1px solid #e4e4e4;}
+.mpop_box .ipt_box2 input{display: block;width: 100%;padding-left: 1.05rem;font-size: .42rem;line-height: 1.2rem;height: 1.2rem;color: #333;}
+.mpop_box .ipt_box2 .ic_phone{position: absolute;top: 50%;left: 0;margin-top: -.32rem;width: .64rem;height: .64rem;background: url('../img/ic_phone_g.png');background-size: 100% 100%;}
+.mpop_box .ipt_box2 .ic_shield{position: absolute;top: 50%;left: 0;margin-top: -.32rem;width: .64rem;height: .64rem;background: url('../img/ic_shield_g.png');background-size: 100% 100%;}
+.mpop_box .btn_code{position: absolute;z-index: 2;bottom: .13rem;right: 0;box-sizing: border-box;width: 2.6rem;height: .94rem;text-align: center;line-height: .94rem;font-size: .36rem;color: #1aa3ff;border: 1px solid #1aa3ff;border-radius: .05rem;}
+.mpop_box .btn_code.grey{color: #9b9b9b;border-color: #e4e4e4;}
+
+.mpop_box .ipt_box2 input:focus,.mpop_box .ipt_box2.cur input{border-bottom: .04rem solid #1aa3ff;}
+.mpop_box .ipt_box2 input:focus + .ic_phone,.mpop_box .ipt_box2.cur .ic_phone{background: url('../img/ic_phone.png');background-size: 100% 100%;}
+.mpop_box .ipt_box2 input:focus + .ic_shield,.mpop_box .ipt_box2.cur .ic_shield{background: url('../img/ic_shield.png');background-size: 100% 100%;}
+
+
+.mpop_box.code{width: 8rem;margin:4rem auto 0;}
+.mpop_box.code .ipt_code{position: relative;padding: .6rem 0 1rem;display: -webkit-box;-webkit-box-pack: center;-webkit-box-align: center;height: 1.2rem;}
+.mpop_box.code .ipt_code input{display: block;width: 4rem;border-bottom: 1px solid #e4e4e4;font-size: .42rem;line-height: 1.2rem;height: 1.2rem;color: #333;}
+.mpop_box.code .img_code{display: block;height: 1.2rem;}
+.mpop_box.code .img_code img{display: block;height: 100%;}
+.mpop_box.code .code_btn{display: -webkit-box;-webkit-box-pack: center;border-top: 1px solid #e4e4e4;}
+.mpop_box.code .code_btn a{position: relative;display: block;width: 50%;height: 1.4rem;text-align: center;line-height: 1.4rem;font-size: .42rem;color: #1aa3ff;}
+.mpop_box.code .code_btn a:nth-child(1):after{content: "";position: absolute;top: 20%;height: 60%;width: 1px;right: 0;background: #e4e4e4;}
+.mpop_box.code .txt_error{position: absolute;top: 1.95rem;margin-top: 1px;left: .4rem;height: .76rem;text-align: left;padding-left: .52rem;font-size: .32rem;color: #fe3824;line-height: .76rem;}
+.mpop_box.code .txt_error:before{content: "";position: absolute;top: 50%;left: 0;width: .32rem;height: .32rem;margin-top: -.16rem;background: url('../img/ic_error.png') no-repeat center center;background-size: contain;}
+
+
+.code_pop{position:absolute;width:100%;height:100%;top:0;left:0;background:#999;z-index:4;}
